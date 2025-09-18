@@ -1,0 +1,124 @@
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  color: var(--White);
+  line-height: 1.8;
+
+}
+
+.dp {
+  border-radius: 50%;
+  width: 30%;
+  margin: 10px 0px;
+}
+
+.content {
+  height: 100vh;
+  background-color: var(--Grey-900);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--Grey-800);
+  width: 360px;
+  height: fit-content;
+  padding: 30px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.social-links-list {
+  width: 100%;
+}
+
+.list-item {
+  width: 100%;
+  text-align: center;
+  background-color: var(--Grey-700);
+  margin: 10px 0;
+  padding: 7px 0;
+  border-radius: 10px;
+}
+
+
+.list-item:hover {
+  background-color: var(--Green);
+  color: var(--Grey-900);
+  cursor: pointer;
+}
+
+.list-item:hover a {
+  color: var(--Grey-900);
+}
+
+.dp:hover,
+p:hover,
+a:hover {
+  cursor: pointer black;
+}
+
+a {
+  width: 100%;
+  color: var(--White);
+
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background-color: var(--Green);
+  /* changes background color on hover */
+  color: var(--Grey-900);
+  /* changes text color on hover */
+}
+
+.tagline {
+  font-weight: 400;
+  color: #f1f1f1;
+}
+
+.location {
+  color: var(--Green);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 396px) {
+  .card {
+    width: 90%;
+  }
+
+}
